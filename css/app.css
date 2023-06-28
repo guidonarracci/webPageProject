@@ -1,0 +1,367 @@
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  grid-area: footer;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.pie-pagina .group-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .group-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .group-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .group-1 .box p {
+  color: rgb(253, 253, 253);
+  margin-bottom: 10px;
+}
+.pie-pagina .group-1 .social-media a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .group-1 .social-media a:hover {
+  color: rgb(215, 154, 0);
+}
+.pie-pagina .group-2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+}
+.pie-pagina .group-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .group-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+header {
+  position: fixed;
+  z-index: 1000000000;
+  width: 100%;
+  grid-area: header;
+}
+header .navbar {
+  background-color: rgb(22, 22, 22);
+}
+header .navbar img {
+  width: 300px;
+}
+header .navbar .dropdown-menu a {
+  color: black;
+}
+header .navbar a {
+  color: white;
+}
+header .navbar .collapse {
+  flex-grow: 0;
+}
+header .navbar .collapse .btn-outline-success a {
+  color: white;
+  font-size: 25px;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+header img {
+  width: 100px;
+}
+header ul li {
+  padding: 20px;
+  font-size: 18px;
+}
+
+main {
+  grid-area: main;
+  width: 100%;
+}
+
+#knowUsSection {
+  overflow: hidden;
+  display: flex;
+  background: rgba(118, 117, 117, 0.871);
+  height: 755px;
+}
+#knowUsSection .container-fluid img {
+  position: relative;
+  max-width: 1250px;
+}
+@media (max-width: 2000px) {
+  #knowUsSection .container-fluid img {
+    margin-left: 620px;
+  }
+}
+@media (max-width: 777px) {
+  #knowUsSection .container-fluid img {
+    margin-left: 80px;
+    max-width: 725px;
+  }
+}
+#knowUsSection .text {
+  font-family: "Mulish", sans-serif;
+  color: whitesmoke;
+}
+#knowUsSection .text p {
+  position: absolute;
+  z-index: 1000;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 3vh;
+  padding: 5px;
+  text-align: center;
+}
+
+#irrigationSystemsinfo .row {
+  display: flex;
+  align-items: center;
+}
+#irrigationSystemsinfo p {
+  align-content: center;
+  color: white;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+.brands {
+  height: 500px;
+}
+.brands p {
+  margin: 50px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  color: white;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 22s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.trabajosRealizados {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.contactForm {
+  margin: 150px;
+}
+
+iframe {
+  height: 300;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
+  background-image: linear-gradient(to top, rgb(84, 83, 83), rgb(59, 59, 59), rgb(39, 39, 39));
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  margin-block: 200px;
+}
+
+#carouselExampleCaptions {
+  margin-top: -99px;
+}
+#carouselExampleCaptions a {
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.865);
+  position: absolute;
+  display: flex;
+  top: 35%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+  font-size: 25px;
+  color: black;
+}
+#carouselExampleCaptions a:hover {
+  transition: 1s;
+  background-color: rgb(225, 153, 7);
+}
+
+.mainText {
+  margin-top: -130px;
+  position: relative;
+}
+.mainText p {
+  margin-top: -60px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 3vh;
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 4vh;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: white;
+  font-size: 4vh;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+}
+
+h4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+h5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+h6 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+img.btn-whatsapp {
+  display: block !important;
+  position: fixed;
+  z-index: 1000;
+  top: 140px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 100px !important;
+}
+img.btn-whatsapp:hover {
+  border-radius: 100px !important;
+  -webkit-box-shadow: 0px 0px 15px 0px rgb(183, 98, 0);
+  -moz-box-shadow: 0px 0px 15px 0px rgb(156, 84, 1);
+  box-shadow: 0px 0px 15px 0px rgb(137, 74, 1);
+  transition-duration: 1s;
+}
+
+.irrigationText {
+  font-size: 30px;
+}
+
+.typesOfIrrigation {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  color: white;
+  font-size: 35px;
+}
+
+.maintenanceImage {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=app.css.map */

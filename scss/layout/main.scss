@@ -1,0 +1,117 @@
+main {
+	grid-area: main;
+	width: 100%;
+}
+#knowUsSection{
+	overflow: hidden;
+	display: flex;
+	background: rgba(118, 117, 117, 0.871);
+	height: 755px;
+	.container-fluid{
+		img{
+			position: relative;
+			max-width: 1250px;
+			@media (max-width: 2000px){
+				margin-left: 620px;
+			}
+			@media (max-width: 777px){
+				margin-left: 80px;
+				max-width: 725px;
+			}
+		}
+	}
+	.text{
+		font-family: 'Mulish', sans-serif;
+		color: whitesmoke;
+		p{
+			position: absolute;
+			z-index: 1000;
+			margin-top: 0;
+			font-weight: 700;
+			font-size: 3vh;
+			padding: 5px;
+			text-align: center;
+		}
+	}
+}
+#irrigationSystemsinfo{
+	.row{
+		display: flex;
+		align-items: center;
+	}
+	p{
+		align-content: center;
+		color: white;
+		font-size: 2vh;
+		font-weight: 400;
+	}
+}
+.brands{
+	height: 500px;
+	p {
+		margin: 50px;
+		margin-top: 120px;
+		display: flex;
+		justify-content: center;
+		color: $color_primary;
+		font-size: 24px;
+		color: $color_primary;
+	}
+}
+
+// Carrusel de marcas
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 22s;
+
+// Animación
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+// Estilo
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+//Fin del carrusel de marcas
