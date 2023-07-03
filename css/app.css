@@ -94,6 +94,10 @@ header ul li {
   padding: 20px;
   font-size: 18px;
 }
+header ul li .navlink:hover {
+  transition: 2s;
+  color: green;
+}
 
 main {
   grid-area: main;
@@ -133,7 +137,8 @@ main {
 }
 @media (max-width: 777px) {
   #knowUsSection .firstText p {
-    font-size: 5vh;
+    font-weight: bold;
+    font-size: 4vh;
     margin-top: -35px;
     left: 0;
   }
@@ -143,21 +148,68 @@ main {
   vertical-align: middle;
   margin-left: 100px;
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 45px;
   padding: 5px;
   position: absolute;
   z-index: 1000;
-  margin-top: 300px;
-  flex-wrap: wrap;
+  margin-top: 310px;
 }
 @media (max-width: 777px) {
   #knowUsSection .secondText p {
-    margin-top: 380px;
-    font-size: 30px;
+    font-weight: 500;
+    margin-top: 400px;
+    font-size: 25px;
     margin-left: 0px;
   }
   #knowUsSection .secondText p br {
     display: none;
+  }
+}
+#knowUsSection .thirdText {
+  margin-left: 100px;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 550px;
+  padding: 5px;
+  position: absolute;
+}
+@media (max-width: 777px) {
+  #knowUsSection .thirdText {
+    font-weight: 400;
+    font-size: 17px;
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 0;
+  }
+}
+#knowUsSection .moreInfoButtonInfo {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 630px;
+  background-color: white;
+  border-radius: 7px;
+}
+#knowUsSection .moreInfoButtonInfo .btn-outline-secondary:hover {
+  background-color: rgb(96, 96, 96);
+}
+#knowUsSection .moreInfoButtonInfo .btn-outline-secondary:hover a {
+  color: white;
+}
+#knowUsSection .moreInfoButtonInfo .btn-outline-secondary a {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 23px;
+}
+@media (max-width: 777px) {
+  #knowUsSection .moreInfoButtonInfo {
+    position: absolute;
+    margin-top: 660px;
+    margin-left: 0;
+  }
+  #knowUsSection .moreInfoButtonInfo a {
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 
@@ -170,6 +222,56 @@ main {
   color: white;
   font-size: 2vh;
   font-weight: 400;
+}
+#irrigationSystemsinfo .box {
+  width: 500px;
+  display: flex;
+  margin-block: 100px;
+}
+
+#irrigationSystemsinfo2 {
+  background-color: rgb(35, 35, 35);
+  border-radius: 4px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: -100px;
+}
+#irrigationSystemsinfo2 p {
+  align-content: center;
+  color: white;
+  font-size: 2vh;
+  font-weight: 400;
+}
+#irrigationSystemsinfo2 .box {
+  width: 400px;
+  padding: 20px;
+  margin-block-end: 100px;
+}
+#irrigationSystemsinfo2 .box .img-fluid {
+  border-radius: 4px;
+  transition: 0.5s;
+}
+#irrigationSystemsinfo2 .box .img-fluid:hover {
+  transform: scale(1.1);
+}
+#irrigationSystemsinfo2 .box .moreInfoButton {
+  padding: 20px;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton a {
+  color: white;
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton1 {
+  padding: 25px;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton1 a {
+  color: white;
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
 }
 
 .brands {
@@ -259,12 +361,13 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
-  background-image: linear-gradient(to top, rgb(84, 83, 83), rgb(59, 59, 59), rgb(39, 39, 39));
+  background-image: linear-gradient(to top, rgb(78, 77, 77), rgb(51, 51, 51), rgb(30, 30, 30));
 }
 
 .container-fluid {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .container {
@@ -274,25 +377,6 @@ body {
 
 #carouselExampleCaptions {
   margin-top: -99px;
-}
-#carouselExampleCaptions a {
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.865);
-  position: absolute;
-  display: flex;
-  top: 35%;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  width: 150px;
-  height: 50px;
-  border-radius: 12px;
-  font-size: 25px;
-  color: black;
-}
-#carouselExampleCaptions a:hover {
-  transition: 1s;
-  background-color: rgb(225, 153, 7);
 }
 
 .mainText {
