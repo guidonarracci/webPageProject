@@ -1,17 +1,246 @@
-/* Error: Undefined variable.
- *     ,
- * 155 |                 font-family: $font-family_1;
- *     |                              ^^^^^^^^^^^^^^
- *     '
- *   scss\layout\main.scss 155:18  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 155 \2502                  font-family: $font-family_1;\d\a     \2502                               ^^^^^^^^^^^^^^\a     \2575 \a   scss\\layout\\main.scss 155:18  root stylesheet";
+main {
+  grid-area: main;
+  width: 100%;
 }
+
+#knowUsSection {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, rgb(187, 157, 135), rgb(125, 95, 73), rgb(91, 57, 33));
+  height: 755px;
+  color: whitesmoke;
+}
+#knowUsSection .container-fluid img {
+  position: relative;
+  max-width: 1250px;
+}
+@media (max-width: 2000px) {
+  #knowUsSection .container-fluid img {
+    margin-left: 620px;
+  }
+}
+@media (max-width: 777px) {
+  #knowUsSection .container-fluid img {
+    margin-left: 80px;
+    max-width: 725px;
+  }
+}
+#knowUsSection .firstText p {
+  position: absolute;
+  z-index: 1000;
+  padding: 30px;
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 6vh;
+}
+@media (max-width: 777px) {
+  #knowUsSection .firstText p {
+    font-weight: bold;
+    font-size: 4vh;
+    margin-top: -35px;
+    left: 0;
+  }
+}
+#knowUsSection .secondText p {
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: 100px;
+  font-weight: lighter;
+  font-size: 45px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1000;
+  margin-top: 310px;
+}
+@media (max-width: 777px) {
+  #knowUsSection .secondText p {
+    font-weight: 500;
+    margin-top: 400px;
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  #knowUsSection .secondText p br {
+    display: none;
+  }
+}
+#knowUsSection .thirdText {
+  margin-left: 100px;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 550px;
+  padding: 5px;
+  position: absolute;
+}
+@media (max-width: 777px) {
+  #knowUsSection .thirdText {
+    font-weight: 400;
+    font-size: 17px;
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 0;
+  }
+}
+#knowUsSection .btn-warning {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 630px;
+  background-color: white;
+  border-radius: 0;
+  border-style: hidden;
+}
+#knowUsSection .btn-warning:hover {
+  background-color: rgb(223, 205, 86);
+}
+#knowUsSection .btn-warning:hover a {
+  color: rgb(0, 0, 0);
+}
+#knowUsSection .btn-warning a {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 23px;
+}
+@media (max-width: 777px) {
+  #knowUsSection .btn-warning {
+    position: absolute;
+    margin-top: 660px;
+    margin-left: 0;
+  }
+  #knowUsSection .btn-warning a {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+#irrigationSystemsinfo .row {
+  display: flex;
+  align-items: center;
+}
+#irrigationSystemsinfo p {
+  align-content: center;
+  color: white;
+  font-size: 2vh;
+  font-weight: 400;
+}
+#irrigationSystemsinfo .box {
+  width: 500px;
+  display: flex;
+  margin-block: 100px;
+}
+
+#irrigationSystemsinfo2 {
+  background-color: rgb(35, 35, 35);
+  border-radius: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: -100px;
+}
+#irrigationSystemsinfo2 p {
+  align-content: center;
+  color: white;
+  font-size: 2vh;
+  font-weight: 400;
+}
+#irrigationSystemsinfo2 .box {
+  width: 400px;
+  padding: 20px;
+  margin-block-end: 100px;
+}
+#irrigationSystemsinfo2 .box .img-fluid {
+  border-radius: 4px;
+  transition: 0.5s;
+}
+#irrigationSystemsinfo2 .box .img-fluid:hover {
+  transform: scale(1.1);
+}
+#irrigationSystemsinfo2 .box .moreInfoButton {
+  padding: 20px;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton .btn-warning {
+  background-color: white;
+  border-radius: 0;
+  border-style: hidden;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton .btn-warning:hover {
+  background-color: rgb(223, 205, 86);
+}
+#irrigationSystemsinfo2 .box .moreInfoButton .btn-warning:hover a {
+  color: rgb(0, 0, 0);
+}
+#irrigationSystemsinfo2 .box .moreInfoButton .btn-warning a {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 23px;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton1 {
+  padding: 25px;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton1 .btn-warning {
+  background-color: white;
+  border-radius: 0;
+  border-style: hidden;
+}
+#irrigationSystemsinfo2 .box .moreInfoButton1 .btn-warning:hover {
+  background-color: rgb(223, 205, 86);
+}
+#irrigationSystemsinfo2 .box .moreInfoButton1 .btn-warning:hover a {
+  color: rgb(0, 0, 0);
+}
+#irrigationSystemsinfo2 .box .moreInfoButton1 .btn-warning a {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 23px;
+}
+
+.brands {
+  background-color: white;
+}
+.brands p {
+  background-color: rgba(210, 210, 33, 0.724);
+  font-weight: lighter;
+  padding: 50px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+}
+
+.slider {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  padding: 50px;
+  display: flex;
+  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+  width: 2800px;
+}
+
+.slider .slide {
+  width: 300px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1400px);
+    transform: translateX(-1400px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

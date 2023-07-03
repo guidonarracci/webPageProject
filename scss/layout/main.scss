@@ -75,25 +75,24 @@ main {
 			margin-left: 0;
 		}
 	}
-	.moreInfoButtonInfo{
+	.btn-warning{
 		position: absolute;
 		margin-left: 100px;
 		margin-top: 630px;
 		background-color: white;
-		border-radius: 7px;
-		.btn-outline-secondary{
-			&:hover{
-				background-color: rgb(96, 96, 96);
-				a{
-					color: white;
-				}
-			}
+		border-radius: 0;
+		border-style: hidden;
+		&:hover{
+			background-color: rgb(223, 205, 86);
 			a{
-				color: black;
-				text-decoration: none;
-				font-weight: lighter;
-				font-size: 23px;
+				color: rgb(0, 0, 0);
 			}
+		}
+		a{
+			color: black;
+			text-decoration: none;
+			font-weight: lighter;
+			font-size: 23px;
 		}
 		@media (max-width: 777px){
 			position: absolute;
@@ -125,7 +124,7 @@ main {
 }
 #irrigationSystemsinfo2{
 	background-color: rgb(35, 35, 35);
-	border-radius: 4px;
+	border-radius: 30px;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	text-align: center;
@@ -149,90 +148,89 @@ main {
 		}
 		.moreInfoButton{
 			padding: 20px;
-			a{
-				color: white;
-				font-size: 20px;
-				font-family: $font-family_1;
-				text-decoration: none;
+			.btn-warning{
+				background-color: white;
+				border-radius: 0;
+				border-style: hidden;
+				&:hover{
+					background-color: rgb(223, 205, 86);
+					a{
+						color: rgb(0, 0, 0);
+					}
+				}
+				a{
+					color: black;
+					text-decoration: none;
+					font-weight: lighter;
+					font-size: 23px;
+				}
 			}
 		}
 		.moreInfoButton1{
 			padding: 25px;
-			a{
-				color: white;
-				font-size: 20px;
-				font-family: $font-family_1;
-				text-decoration: none;
+			.btn-warning{
+				background-color: white;
+				border-radius: 0;
+				border-style: hidden;
+				&:hover{
+					background-color: rgb(223, 205, 86);
+					a{
+						color: rgb(0, 0, 0);
+					}
+				}
+				a{
+					color: black;
+					text-decoration: none;
+					font-weight: lighter;
+					font-size: 23px;
+				}
 			}
 		}
 	}
 }
 .brands{
-	height: 500px;
+	background-color: white;
 	p {
-		margin: 50px;
-		margin-top: 120px;
+		background-color: rgba(210, 210, 33, 0.724);
+		font-weight: lighter;
+		padding: 50px;
+		color: rgb(0, 0, 0);
 		display: flex;
 		justify-content: center;
-		color: $color_primary;
-		font-size: 24px;
-		color: $color_primary;
+		font-size: 2vh;
 	}
 }
 
-// Carrusel de marcas
-
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-}
-
-$animationSpeed: 22s;
-
-// Animación
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
-}
-
-// Estilo
 .slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
-
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
-//Fin del carrusel de marcas
+
+.slider .slide-track {
+	padding: 50px;
+    display: flex;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 300px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
