@@ -69,6 +69,9 @@ header {
 header .navbar {
   background-color: rgb(22, 22, 22);
 }
+header .navbar .nav-link.active {
+  color: rgb(94, 151, 194);
+}
 header .navbar img {
   width: 300px;
 }
@@ -93,10 +96,11 @@ header img {
 header ul li {
   padding: 20px;
   font-size: 18px;
+  font-weight: 500;
 }
-header ul li .navlink:hover {
-  transition: 2s;
-  color: green;
+header ul li .nav-link:hover {
+  transition: 0.5s;
+  color: rgb(94, 151, 194);
 }
 
 main {

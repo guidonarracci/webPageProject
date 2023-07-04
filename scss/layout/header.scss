@@ -4,6 +4,9 @@ header {
     width: 100%;
 	grid-area: header;
 	.navbar{
+		.nav-link.active{
+			color: rgb(94, 151, 194);
+		}
 		img{
 			width: 300px;
 		}
@@ -35,10 +38,11 @@ header {
 		li {
 			padding: 20px;
 			font-size: 18px;
-			.navlink{
+			font-weight: 500;
+			.nav-link{
 				&:hover{
-					transition: 2s;
-					color: green;
+					transition: 0.5s;
+					color: rgb(94, 151, 194);
 				}
 			}
 		}
