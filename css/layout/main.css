@@ -3,6 +3,17 @@ main {
   width: 100%;
 }
 
+.mainText {
+  margin-top: -130px;
+  position: relative;
+}
+.mainText p {
+  margin-top: -60px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
 #knowUsSection {
   overflow: hidden;
   display: flex;
@@ -18,6 +29,11 @@ main {
 @media (max-width: 2000px) {
   #knowUsSection .container-fluid img {
     margin-left: 620px;
+  }
+}
+@media (max-width: 1400px) {
+  #knowUsSection .container-fluid img {
+    margin-left: 490px;
   }
 }
 @media (max-width: 777px) {
@@ -137,16 +153,18 @@ main {
   text-align: center;
   margin-top: -100px;
 }
-#irrigationSystemsinfo2 p {
-  align-content: center;
-  color: white;
-  font-size: 2vh;
-  font-weight: 400;
-}
 #irrigationSystemsinfo2 .box {
   width: 400px;
   padding: 20px;
   margin-block-end: 100px;
+}
+#irrigationSystemsinfo2 .box h2 {
+  font-size: 3vh;
+}
+@media (max-width: 1400px) {
+  #irrigationSystemsinfo2 .box {
+    width: 300px;
+  }
 }
 #irrigationSystemsinfo2 .box .img-fluid {
   border-radius: 4px;
@@ -201,12 +219,12 @@ main {
 }
 .brands p {
   background-color: rgba(210, 210, 33, 0.724);
-  font-weight: lighter;
+  font-weight: 400;
   padding: 50px;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  font-size: 2vh;
+  font-size: 19px;
 }
 
 .slider {

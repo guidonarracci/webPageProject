@@ -2,12 +2,23 @@ main {
 	grid-area: main;
 	width: 100%;
 }
+.mainText{
+	margin-top: -130px;
+	position: relative;
+	p{
+		margin-top: -60px;
+		font-weight: 400;
+		color: rgb(255, 255, 255);
+		font-size: 24px;
+	}
+}
 #knowUsSection{
 	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
 	background-image: linear-gradient(to top, rgb(187, 157, 135), rgb(125, 95, 73), rgb(91, 57, 33));
 	height: 755px;
+	color: whitesmoke;
 	.container-fluid{
 		img{
 			position: relative;
@@ -15,13 +26,15 @@ main {
 			@media (max-width: 2000px){
 				margin-left: 620px;
 			}
+			@media (max-width: 1400px){
+				margin-left: 490px;
+			}
 			@media (max-width: 777px){
 				margin-left: 80px;
 				max-width: 725px;
 			}
 		}
 	}
-	color: whitesmoke;
 	.firstText{
 		p{
 			position: absolute;
@@ -129,16 +142,16 @@ main {
 	flex-wrap: wrap;
 	text-align: center;
 	margin-top: -100px;
-	p{
-		align-content: center;
-		color: white;
-		font-size: 2vh;
-		font-weight: 400;
-	}
 	.box{
+		h2{
+			font-size: 3vh;
+		}
 		width: 400px;
 		padding: 20px;
 		margin-block-end: 100px;
+		@media (max-width: 1400px){
+				width: 300px;
+		}
 		.img-fluid{
 			border-radius: 4px;
 			transition: 0.5s;
@@ -192,12 +205,12 @@ main {
 	background-color: white;
 	p {
 		background-color: rgba(210, 210, 33, 0.724);
-		font-weight: lighter;
+		font-weight: 400;
 		padding: 50px;
 		color: rgb(0, 0, 0);
 		display: flex;
 		justify-content: center;
-		font-size: 2vh;
+		font-size: 19px;
 	}
 }
 
