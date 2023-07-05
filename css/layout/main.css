@@ -3,12 +3,8 @@ main {
   width: 100%;
 }
 
-.mainText {
-  margin-top: -130px;
-  position: relative;
-}
 .mainText p {
-  margin-top: -60px;
+  margin-top: -50px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -132,11 +128,12 @@ main {
 #irrigationSystemsinfo .row {
   display: flex;
   align-items: center;
+  margin-top: -70px;
 }
 #irrigationSystemsinfo p {
   align-content: center;
   color: white;
-  font-size: 2vh;
+  font-size: 20px;
   font-weight: 400;
 }
 #irrigationSystemsinfo .box {
@@ -152,6 +149,7 @@ main {
   flex-wrap: wrap;
   text-align: center;
   margin-top: -100px;
+  margin-bottom: 30px;
 }
 #irrigationSystemsinfo2 .box {
   width: 400px;

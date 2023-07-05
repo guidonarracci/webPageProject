@@ -1,6 +1,123 @@
-.trabajosRealizados{
+#knowUsSection-knowUs{
+	overflow: hidden;
 	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	padding: 50px;
+	justify-content: space-between;
+	background-image: linear-gradient(to top, rgba(119, 140, 217, 0.716), rgba(39, 59, 149, 0.641), rgba(16, 57, 92, 0.813));
+	height: 755px;
+	color: whitesmoke;
+	margin-top: 100px;
+	.container-fluid{
+		img{
+			position: relative;
+			max-width: 1250px;
+			@media (max-width: 2000px){
+				margin-left: 620px;
+			}
+			@media (max-width: 1400px){
+				margin-left: 490px;
+			}
+			@media (max-width: 777px){
+				margin-left: 80px;
+				max-width: 725px;
+			}
+		}
+	}
+	.firstText{
+		p{
+			position: absolute;
+			z-index: 1000;
+			padding: 30px;
+			margin-top: 0;
+			font-weight: 500;
+			font-size: 6vh;
+			@media (max-width: 777px){
+				font-weight: bold;
+				font-size: 4vh;
+				margin-top: -35px;
+				left: 0;
+			}
+		}
+	}
+	.secondText{
+		p{
+			text-transform: uppercase;
+			vertical-align: middle;
+			margin-left: 100px;
+			font-weight: lighter;
+			font-size: 45px;
+			padding: 5px;
+			position: absolute;
+			z-index: 1000;
+			margin-top: 310px;
+			@media (max-width: 777px){
+				font-weight: 500;
+				margin-top: 400px;
+				font-size: 25px;
+				margin-left: 0px;
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+	.thirdText{
+		margin-left: 100px;
+		font-weight: lighter;
+		font-size: 20px;
+		margin-top: 550px;
+		padding: 5px;
+		position: absolute;
+		@media (max-width: 777px){
+			font-weight: 400;
+			font-size: 17px;
+			position: absolute;
+			margin-top: 580px;
+			margin-left: 0;
+		}
+	}
+	.btn-warning{
+		position: absolute;
+		margin-left: 100px;
+		margin-top: 630px;
+		background-color: white;
+		border-radius: 0;
+		border-style: hidden;
+		&:hover{
+			background-color: rgb(223, 205, 86);
+			a{
+				color: rgb(0, 0, 0);
+			}
+		}
+		a{
+			color: black;
+			text-decoration: none;
+			font-weight: lighter;
+			font-size: 23px;
+		}
+		@media (max-width: 777px){
+			position: absolute;
+			margin-top: 660px;
+			margin-left: 0;
+			a{
+				font-weight: 400;
+				font-size: 16px;
+			}
+		}
+	}
+}
+#getToKnowUs{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+	h2{
+		font-size: 50px;
+		@media (width: 1920px){
+			br{
+			display: none;
+			}
+		}
+		@media (max-width: 777px){
+		}
+	}
 }
