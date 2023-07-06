@@ -479,20 +479,58 @@ main {
   }
 }
 
-#getToKnowUs {
+#gotToKnowUs {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 10px;
 }
-#getToKnowUs h2 {
+#gotToKnowUs .img-fluid {
+  width: 23%;
+}
+#gotToKnowUs h1 {
   font-size: 50px;
 }
 @media (width: 1920px) {
-  #getToKnowUs h2 br {
+  #gotToKnowUs h1 br {
     display: none;
   }
 }
+#getToKnowUs {
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+#getToKnowUs .row h2 {
+  font-size: 3vh;
+  color: rgb(224, 224, 73);
+}
+#getToKnowUs .row p {
+  font-size: 2vh;
+  color: white;
+}
+
+#ourProviders1 {
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  align-items: center;
+  margin-top: -199px;
+  margin-right: 80px;
+}
+#ourProviders1 .row {
+  padding: 11px;
+}
+#ourProviders1 .row h2 {
+  font-size: 3vh;
+  color: rgb(224, 224, 73);
+}
+#ourProviders1 .row p {
+  font-size: 2vh;
+  color: white;
+}
+
 .contactForm {
   margin: 150px;
 }
@@ -535,7 +573,7 @@ h1 {
   margin-top: 100px;
   margin-bottom: 100px;
   font-size: 4vh;
-  font-weight: 700;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255);
@@ -543,7 +581,7 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 3vh;
+  font-size: 31px;
   font-weight: 700;
   margin-bottom: 20px;
 }

@@ -105,12 +105,15 @@
 		}
 	}
 }
-#getToKnowUs{
+#gotToKnowUs{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 25px;
-	h2{
+	padding: 10px;
+	.img-fluid{
+		width: 23%;
+	}
+	h1{
 		font-size: 50px;
 		@media (width: 1920px){
 			br{
@@ -118,6 +121,41 @@
 			}
 		}
 		@media (max-width: 777px){
+		}
+	}
+}
+#getToKnowUs{
+	background-color: rgb(28, 28, 28);
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 80px;
+	.row{
+		h2{
+			font-size: 3vh;
+			color: rgb(224, 224, 73);
+		}
+		p{
+			font-size: 2vh;
+			color: white;
+		}
+	}
+}
+#ourProviders1{
+	background-color: rgb(28, 28, 28);
+	display: flex;
+	align-items: center;
+	margin-top: -199px;
+	margin-right: 80px;
+	.row{
+		padding: 11px;
+		h2{
+			font-size: 3vh;
+			color: rgb(224, 224, 73);
+		}
+		p{
+			font-size: 2vh;
+			color: white;
 		}
 	}
 }
