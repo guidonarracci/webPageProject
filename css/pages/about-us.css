@@ -118,7 +118,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
 }
 #gotToKnowUs .img-fluid {
   width: 23%;
@@ -131,18 +130,27 @@
     display: none;
   }
 }
-#getToKnowUs {
-  background-color: rgb(28, 28, 28);
+#getToKnowUs1 {
+  max-width: 1300px;
+  margin-left: 0;
   display: flex;
+  background-color: rgb(28, 28, 28);
   align-items: center;
-  margin-top: 10px;
-  margin-left: 80px;
+  margin-block: 50px;
 }
-#getToKnowUs .row h2 {
+@media (max-width: 777px) {
+  #getToKnowUs1 {
+    padding: 20px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#getToKnowUs1 .row h2 {
   font-size: 3vh;
-  color: rgb(224, 224, 73);
+  color: rgb(73, 171, 224);
 }
-#getToKnowUs .row p {
+#getToKnowUs1 .row p {
   font-size: 2vh;
   color: white;
 }
@@ -150,18 +158,74 @@
 #ourProviders1 {
   background-color: rgb(28, 28, 28);
   display: flex;
-  align-items: center;
-  margin-top: -199px;
-  margin-right: 80px;
+  flex-direction: column;
+  flex-grow: 0;
+  align-items: flex-end;
+  margin-block: 150px;
 }
-#ourProviders1 .row {
-  padding: 11px;
+@media (max-width: 777px) {
+  #ourProviders1 {
+    overflow: hidden;
+  }
 }
 #ourProviders1 .row h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3vh;
+  color: rgb(73, 171, 224);
+}
+#ourProviders1 .row p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+}
+#ourProviders1 .row .container {
+  max-width: 1000px;
+  display: flex;
+}
+#ourProviders1 .row .container .paisaProviders {
+  display: flex;
+  align-items: center;
+}
+#ourProviders1 .row .container .paisaProviders .img-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+}
+@media (max-width: 777px) {
+  #ourProviders1 .row .container .paisaProviders {
+    overflow: hidden;
+  }
+  #ourProviders1 .row .container .paisaProviders .img-fluid .img1 {
+    position: absolute;
+  }
+  #ourProviders1 .row .container .paisaProviders .img-fluid .img2 {
+    position: absolute;
+  }
+  #ourProviders1 .row .container .paisaProviders .img-fluid .img3 {
+    margin-left: 300px;
+  }
+}
+
+#getToKnowUs2 {
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 777px) {
+  #getToKnowUs2 {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#getToKnowUs2 .row h2 {
   font-size: 3vh;
   color: rgb(224, 224, 73);
 }
-#ourProviders1 .row p {
+#getToKnowUs2 .row p {
   font-size: 2vh;
   color: white;
 }

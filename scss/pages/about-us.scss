@@ -109,7 +109,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
 	.img-fluid{
 		width: 23%;
 	}
@@ -124,16 +123,23 @@
 		}
 	}
 }
-#getToKnowUs{
-	background-color: rgb(28, 28, 28);
+#getToKnowUs1{
+	max-width: 1300px;
+	margin-left: 0;
 	display: flex;
+	background-color: rgb(28, 28, 28);
 	align-items: center;
-	margin-top: 10px;
-	margin-left: 80px;
+	margin-block: 50px;
+	@media (max-width: 777px){
+		padding: 20px;
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+	}
 	.row{
 		h2{
 			font-size: 3vh;
-			color: rgb(224, 224, 73);
+			color: rgb(73, 171, 224);
 		}
 		p{
 			font-size: 2vh;
@@ -144,11 +150,66 @@
 #ourProviders1{
 	background-color: rgb(28, 28, 28);
 	display: flex;
-	align-items: center;
-	margin-top: -199px;
-	margin-right: 80px;
+	flex-direction: column;
+	flex-grow: 0;
+	align-items: flex-end;
+	margin-block: 150px;
+	@media (max-width: 777px){
+		overflow: hidden;
+	}
 	.row{
-		padding: 11px;
+		h2{
+			display: flex;
+			justify-content: center;
+			font-size: 3vh;
+			color: rgb(73, 171, 224);
+		}
+		p{
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			font-size: 2vh;
+			color: white;
+		}
+		.container{
+			max-width: 1000px;
+			display: flex;
+			.paisaProviders{
+				display: flex;
+				align-items: center;
+				.img-wrap{
+					display: flex;
+					flex-direction: column;
+					max-width: 1500px;
+				}
+				@media (max-width: 777px){
+					overflow: hidden;
+					.img-fluid{
+						.img1{
+							position: absolute;
+						}
+						.img2{
+							position: absolute;
+						}
+						.img3{
+							margin-left: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#getToKnowUs2{
+	background-color: rgb(28, 28, 28);
+	display: flex;
+	align-items: center;
+	@media (max-width: 777px){
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.row{
 		h2{
 			font-size: 3vh;
 			color: rgb(224, 224, 73);
