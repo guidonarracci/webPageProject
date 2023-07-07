@@ -516,39 +516,44 @@ main {
   color: rgb(73, 171, 224);
 }
 #getToKnowUs1 .row p {
-  font-size: 2vh;
+  font-size: 18px;
   color: white;
 }
 
 #ourProviders1 {
   background-color: rgb(28, 28, 28);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-grow: 0;
-  align-items: flex-end;
   margin-block: 150px;
+  overflow: hidden;
+  max-height: 1000px;
 }
 @media (max-width: 777px) {
   #ourProviders1 {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 }
-#ourProviders1 .row h2 {
+#ourProviders1 .providersText {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 30px;
+}
+#ourProviders1 .providersText h2 {
   font-size: 3vh;
   color: rgb(73, 171, 224);
 }
-#ourProviders1 .row p {
-  display: flex;
+#ourProviders1 .providersText p {
   justify-content: center;
-  text-align: center;
-  font-size: 2vh;
+  align-items: center;
+  font-size: 18px;
   color: white;
 }
 #ourProviders1 .row .container {
+  margin-top: 90px;
   max-width: 1000px;
-  display: flex;
 }
 #ourProviders1 .row .container .paisaProviders {
   display: flex;
@@ -563,14 +568,11 @@ main {
   #ourProviders1 .row .container .paisaProviders {
     overflow: hidden;
   }
-  #ourProviders1 .row .container .paisaProviders .img-fluid .img1 {
-    position: absolute;
-  }
-  #ourProviders1 .row .container .paisaProviders .img-fluid .img2 {
+  #ourProviders1 .row .container .paisaProviders .img-fluid .img-wrap {
     position: absolute;
   }
   #ourProviders1 .row .container .paisaProviders .img-fluid .img3 {
-    margin-left: 300px;
+    position: relative;
   }
 }
 

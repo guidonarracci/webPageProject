@@ -142,7 +142,7 @@
 			color: rgb(73, 171, 224);
 		}
 		p{
-			font-size: 2vh;
+			font-size: 18px;
 			color: white;
 		}
 	}
@@ -150,30 +150,35 @@
 #ourProviders1{
 	background-color: rgb(28, 28, 28);
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-grow: 0;
-	align-items: flex-end;
 	margin-block: 150px;
+	overflow: hidden;
+	max-height: 1000px;
 	@media (max-width: 777px){
-		overflow: hidden;
+		display: flex;
+		flex-direction: column;
 	}
-	.row{
+	.providersText{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 30px;
 		h2{
-			display: flex;
-			justify-content: center;
 			font-size: 3vh;
 			color: rgb(73, 171, 224);
 		}
 		p{
-			display: flex;
 			justify-content: center;
-			text-align: center;
-			font-size: 2vh;
+			align-items: center;
+			font-size: 18px;
 			color: white;
 		}
+	}
+	.row{
 		.container{
+			margin-top: 90px;
 			max-width: 1000px;
-			display: flex;
 			.paisaProviders{
 				display: flex;
 				align-items: center;
@@ -185,14 +190,11 @@
 				@media (max-width: 777px){
 					overflow: hidden;
 					.img-fluid{
-						.img1{
-							position: absolute;
-						}
-						.img2{
+						.img-wrap{
 							position: absolute;
 						}
 						.img3{
-							margin-left: 300px;
+							position: relative;
 						}
 					}
 				}
