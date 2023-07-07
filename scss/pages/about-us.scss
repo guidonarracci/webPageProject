@@ -146,6 +146,12 @@
 			color: white;
 		}
 	}
+	.img-fluid{
+		max-width: 60%;
+		@media (max-width: 777px){
+			max-width: 100%;
+		}
+	}
 }
 #ourProviders1{
 	background-color: rgb(28, 28, 28);
@@ -173,6 +179,11 @@
 			align-items: center;
 			font-size: 18px;
 			color: white;
+			@media (max-width: 777px){
+				br{
+					display: none;
+				}
+			}
 		}
 	}
 	.row{

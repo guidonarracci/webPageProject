@@ -154,6 +154,14 @@
   font-size: 18px;
   color: white;
 }
+#getToKnowUs1 .img-fluid {
+  max-width: 60%;
+}
+@media (max-width: 777px) {
+  #getToKnowUs1 .img-fluid {
+    max-width: 100%;
+  }
+}
 
 #ourProviders1 {
   background-color: rgb(28, 28, 28);
@@ -185,6 +193,11 @@
   align-items: center;
   font-size: 18px;
   color: white;
+}
+@media (max-width: 777px) {
+  #ourProviders1 .providersText p br {
+    display: none;
+  }
 }
 #ourProviders1 .row .container {
   margin-top: 90px;
