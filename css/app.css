@@ -86,17 +86,15 @@ header .navbar .collapse {
 }
 header .navbar .collapse .btn-outline-success a {
   color: white;
-  font-size: 25px;
+  font-size: 24px;
   font-family: "Mulish", sans-serif;
   text-decoration: none;
 }
-header img {
-  width: 100px;
-}
 header ul li {
   padding: 20px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
 }
 header ul li .nav-link:hover {
   transition: 0.5s;
@@ -270,11 +268,17 @@ main {
   }
 }
 #irrigationSystemsinfo2 .box .img-fluid {
+  width: 200px;
   border-radius: 4px;
   transition: 0.5s;
 }
 #irrigationSystemsinfo2 .box .img-fluid:hover {
   transform: scale(1.1);
+}
+@media (max-width: 777px) {
+  #irrigationSystemsinfo2 .box .img-fluid {
+    width: 150px;
+  }
 }
 #irrigationSystemsinfo2 .box .moreInfoButton {
   padding: 20px;
@@ -293,8 +297,8 @@ main {
 #irrigationSystemsinfo2 .box .moreInfoButton .btn-warning a {
   color: black;
   text-decoration: none;
-  font-weight: lighter;
-  font-size: 23px;
+  font-weight: 400;
+  font-size: 19px;
 }
 #irrigationSystemsinfo2 .box .moreInfoButton1 {
   padding: 25px;
@@ -313,8 +317,8 @@ main {
 #irrigationSystemsinfo2 .box .moreInfoButton1 .btn-warning a {
   color: black;
   text-decoration: none;
-  font-weight: lighter;
-  font-size: 23px;
+  font-weight: 400;
+  font-size: 19px;
 }
 
 .brands {
@@ -496,12 +500,10 @@ main {
   }
 }
 #getToKnowUs1 {
-  max-width: 1300px;
   margin-left: 0;
   display: flex;
   background-color: rgb(28, 28, 28);
   align-items: center;
-  margin-block: 50px;
 }
 @media (max-width: 777px) {
   #getToKnowUs1 {
@@ -520,11 +522,11 @@ main {
   color: white;
 }
 #getToKnowUs1 .img-fluid {
-  max-width: 60%;
+  max-width: 40%;
 }
 @media (max-width: 777px) {
   #getToKnowUs1 .img-fluid {
-    max-width: 100%;
+    max-width: 70%;
   }
 }
 

@@ -24,21 +24,19 @@ header {
 			.btn-outline-success{
 				a{
 					color: white;
-					font-size: 25px;
+					font-size: 24px;
 					font-family: $font-family_1;
 					text-decoration: none;
 				}
 			}
 		}
 	}	
-	img {
-		width: 100px;
-	}
 	ul {
 		li {
 			padding: 20px;
-			font-size: 18px;
-			font-weight: 500;
+			font-size: 17px;
+			font-weight: 400;
+			font-family: $font-family_1;
 			.nav-link{
 				&:hover{
 					transition: 0.5s;

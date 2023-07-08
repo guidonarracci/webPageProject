@@ -131,12 +131,10 @@
   }
 }
 #getToKnowUs1 {
-  max-width: 1300px;
   margin-left: 0;
   display: flex;
   background-color: rgb(28, 28, 28);
   align-items: center;
-  margin-block: 50px;
 }
 @media (max-width: 777px) {
   #getToKnowUs1 {
@@ -155,11 +153,11 @@
   color: white;
 }
 #getToKnowUs1 .img-fluid {
-  max-width: 60%;
+  max-width: 40%;
 }
 @media (max-width: 777px) {
   #getToKnowUs1 .img-fluid {
-    max-width: 100%;
+    max-width: 70%;
   }
 }
 

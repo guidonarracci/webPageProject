@@ -165,11 +165,17 @@ main {
   }
 }
 #irrigationSystemsinfo2 .box .img-fluid {
+  width: 200px;
   border-radius: 4px;
   transition: 0.5s;
 }
 #irrigationSystemsinfo2 .box .img-fluid:hover {
   transform: scale(1.1);
+}
+@media (max-width: 777px) {
+  #irrigationSystemsinfo2 .box .img-fluid {
+    width: 150px;
+  }
 }
 #irrigationSystemsinfo2 .box .moreInfoButton {
   padding: 20px;
@@ -188,8 +194,8 @@ main {
 #irrigationSystemsinfo2 .box .moreInfoButton .btn-warning a {
   color: black;
   text-decoration: none;
-  font-weight: lighter;
-  font-size: 23px;
+  font-weight: 400;
+  font-size: 19px;
 }
 #irrigationSystemsinfo2 .box .moreInfoButton1 {
   padding: 25px;
@@ -208,8 +214,8 @@ main {
 #irrigationSystemsinfo2 .box .moreInfoButton1 .btn-warning a {
   color: black;
   text-decoration: none;
-  font-weight: lighter;
-  font-size: 23px;
+  font-weight: 400;
+  font-size: 19px;
 }
 
 .brands {
