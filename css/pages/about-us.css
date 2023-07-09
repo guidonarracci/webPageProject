@@ -1,3 +1,7 @@
+main {
+  background-color: rgb(249, 245, 224);
+}
+
 #knowUsSection-knowUs {
   overflow: hidden;
   display: flex;
@@ -165,11 +169,12 @@
 
 #getToKnowUs2 {
   margin-top: -120px;
-  margin-right: 0;
   background-color: rgb(28, 28, 28);
+  padding: 20px;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 @media (max-width: 777px) {
   #getToKnowUs2 {
@@ -179,13 +184,39 @@
   }
 }
 #getToKnowUs2 .row {
+  display: flex;
   align-items: center;
 }
+#getToKnowUs2 .row .getToKnowUsImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+#getToKnowUs2 .row .getToKnowUsImg .img-fluid {
+  width: 30%;
+}
+@media (max-width: 777px) {
+  #getToKnowUs2 .row .getToKnowUsImg .img-fluid {
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media (max-width: 777px) {
+  #getToKnowUs2 .row .getToKnowUsImg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 #getToKnowUs2 .row h2 {
+  display: flex;
+  justify-content: center;
   font-size: 3vh;
   color: rgb(73, 171, 224);
 }
 #getToKnowUs2 .row p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-size: 2vh;
   color: white;
 }

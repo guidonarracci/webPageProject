@@ -136,11 +136,6 @@ main {
   font-size: 20px;
   font-weight: 400;
 }
-#irrigationSystemsinfo .box {
-  width: 500px;
-  display: flex;
-  margin-block: 100px;
-}
 
 #irrigationSystemsinfo2 {
   background-color: rgb(35, 35, 35);
