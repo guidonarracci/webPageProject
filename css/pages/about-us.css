@@ -131,6 +131,7 @@
   }
 }
 #getToKnowUs1 {
+  margin-top: 50px;
   margin-left: 0;
   display: flex;
   background-color: rgb(28, 28, 28);
@@ -153,12 +154,40 @@
   color: white;
 }
 #getToKnowUs1 .img-fluid {
-  max-width: 40%;
+  max-width: 30%;
+  margin-left: 150px;
 }
 @media (max-width: 777px) {
   #getToKnowUs1 .img-fluid {
     max-width: 70%;
   }
+}
+
+#getToKnowUs2 {
+  margin-top: -120px;
+  margin-right: 0;
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+@media (max-width: 777px) {
+  #getToKnowUs2 {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#getToKnowUs2 .row {
+  align-items: center;
+}
+#getToKnowUs2 .row h2 {
+  font-size: 3vh;
+  color: rgb(73, 171, 224);
+}
+#getToKnowUs2 .row p {
+  font-size: 2vh;
+  color: white;
 }
 
 #ourProviders1 {
@@ -220,27 +249,6 @@
   #ourProviders1 .row .container .paisaProviders .img-fluid .img3 {
     position: relative;
   }
-}
-
-#getToKnowUs2 {
-  background-color: rgb(28, 28, 28);
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 777px) {
-  #getToKnowUs2 {
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-  }
-}
-#getToKnowUs2 .row h2 {
-  font-size: 3vh;
-  color: rgb(224, 224, 73);
-}
-#getToKnowUs2 .row p {
-  font-size: 2vh;
-  color: white;
 }
 
 /*# sourceMappingURL=about-us.css.map */
