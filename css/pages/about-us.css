@@ -23,7 +23,7 @@
 }
 @media (max-width: 777px) {
   #knowUsSection-knowUs .container-fluid img {
-    margin-left: 80px;
+    margin-left: -130px;
     max-width: 725px;
   }
 }
@@ -162,7 +162,7 @@
   justify-content: space-around;
 }
 #getToKnowUs2 .getToKnowUs2Img .img-fluid {
-  width: 65%;
+  width: 100%;
 }
 @media (max-width: 777px) {
   #getToKnowUs2 .getToKnowUs2Img .img-fluid {
@@ -182,7 +182,6 @@
   align-items: center;
 }
 #getToKnowUs2 .row h2 {
-  margin-left: 50px;
   display: flex;
   justify-content: space-evenly;
   font-size: 3vh;
@@ -194,7 +193,6 @@
   }
 }
 #getToKnowUs2 .row p {
-  margin-left: 50px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -226,7 +224,7 @@
   justify-content: space-around;
 }
 #getToKnowUs3 .getToKnowUs2Img .img-fluid {
-  width: 50%;
+  width: 80%;
 }
 @media (max-width: 777px) {
   #getToKnowUs3 .getToKnowUs2Img .img-fluid {
@@ -246,7 +244,6 @@
   align-items: center;
 }
 #getToKnowUs3 .row h2 {
-  margin-left: 100px;
   display: flex;
   justify-content: space-evenly;
   font-size: 3vh;
@@ -258,7 +255,6 @@
   }
 }
 #getToKnowUs3 .row p {
-  margin-left: 100px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -316,11 +312,13 @@
   padding: 30px;
 }
 #ourProviders1 .providersText h2 {
+  margin-right: 100px;
   text-align: center;
   font-size: 3vh;
   color: rgb(73, 171, 224);
 }
 #ourProviders1 .providersText p {
+  margin-right: 100px;
   text-align: center;
   font-size: 18px;
   color: white;

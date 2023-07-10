@@ -1,17 +1,94 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |     color: $color_primary;
- *   |            ^^^^^^^^^^^^^^
- *   '
- *   scss\pages\irrigation-systems.scss 7:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      color: $color_primary;\d\a   \2502             ^^^^^^^^^^^^^^\a   \2575 \a   scss\\pages\\irrigation-systems.scss 7:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.galery {
+  font-family: "open sans";
+}
+.galery h1 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+}
+
+.line {
+  margin-top: 50px;
+  border-top: 5px solid #0077C0;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+.image-container .image {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(32, 34, 36, 0.647);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.overlay h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+  .image-container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .image-container {
+    width: 90%;
+  }
+  .image-container .image {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 22px;
+  }
+  .image-container {
+    width: 98%;
+  }
+  .image-container .image {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=irrigation-systems.css.map */
