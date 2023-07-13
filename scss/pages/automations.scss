@@ -1,4 +1,4 @@
-#firstMaintenanceSection{
+#firstAutomationSection{
 	display: flex;
 	h1{
 		position: absolute;
@@ -17,7 +17,7 @@
 		position: absolute;
 		color: white;
 		margin-top: 260px;
-		margin-left: -1380px;
+		margin-left: -1500px;
 		font-size: 20px;
 		font-weight: lighter;
 		@media (max-width: 777px){
@@ -26,11 +26,11 @@
 			margin-left: -170px;
 		}
 	}
-	p{
+	.firstAutomationItem{
 		position: absolute;
 		color: white;
 		margin-top: 350px;
-		margin-left: -740px;
+		margin-left: -795px;
 		font-size: 25px;
 		font-weight: lighter;
 		@media (max-width: 777px){
@@ -39,10 +39,49 @@
 			margin-left: 10px;
 		}
 	}
+	.secondAutomationItem{
+		position: absolute;
+		color: white;
+		margin-top: 400px;
+		margin-left: -1625px;
+		font-size: 25px;
+		font-weight: lighter;
+		@media (max-width: 777px){
+			font-size: 2vh;
+			margin-top: 420px;
+			margin-left: -260px;
+		}
+	}
+	.thirdAutomationItem{
+		position: absolute;
+		color: white;
+		margin-top: 450px;
+		margin-left: -1455px;
+		font-size: 25px;
+		font-weight: lighter;
+		@media (max-width: 777px){
+			font-size: 2vh;
+			margin-top: 460px;
+			margin-left: -135px;
+		}
+	}
+	.forthAutomationItem{
+		position: absolute;
+		color: white;
+		margin-top: 500px;
+		margin-left: -1630px;
+		font-size: 25px;
+		font-weight: lighter;
+		@media (max-width: 777px){
+			font-size: 2vh;
+			margin-top: 500px;
+			margin-left: -260px;
+		}
+	}
 	.btn-warning{
 		position: absolute;
 		margin-top: 630px;
-		margin-left: -1490px;
+		margin-left: -1620px;
 		background-color: white;
 		border-radius: 0;
 		border-style: hidden;
@@ -60,7 +99,7 @@
 		}
 		@media (max-width: 777px){
 			position: absolute;
-			margin-top: 750px;
+			margin-top: 600px;
 			margin-left: -260px;
 			a{
 				font-weight: 400;
@@ -68,7 +107,7 @@
 			}
 		}
 	}
-	#maintenanceLogo{
+	#automationLogo{
 		display: flex;
 		margin-right: -10px;
 		margin-bottom: 0;
@@ -81,11 +120,12 @@
 		img{
 			position: absolute;
 			display: flex;
-			margin-top: 150px;
-			margin-left: 600px;
+			margin-top: 200px;
+			margin-left: 650px;
+			width: 400px;
 			@media (max-width: 777px){
 				margin-top: 700px;
-				margin-left: -10px;
+				margin-left: 10px;
 				width: 150px;
 			}
 		}
@@ -97,18 +137,5 @@
 	background-color: white;
 	@media (max-width: 777px){
 		height: 100px;
-	}
-}
-#lastMaintenanceSection{
-	background-color: rgb(47, 47, 47);
-	.maintenanceImages{
-		display: flex;
-		flex-direction: row;
-		border-radius: 10px;
-		.img-fluid{
-			padding: 50px;
-			max-width: 20%;
-			justify-content: space-between;
-		}
 	}
 }

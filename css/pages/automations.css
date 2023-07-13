@@ -1,7 +1,7 @@
-#firstMaintenanceSection {
+#firstAutomationSection {
   display: flex;
 }
-#firstMaintenanceSection h1 {
+#firstAutomationSection h1 {
   position: absolute;
   color: white;
   font-weight: lighter;
@@ -10,74 +10,119 @@
   margin-left: -1020px;
 }
 @media (max-width: 777px) {
-  #firstMaintenanceSection h1 {
+  #firstAutomationSection h1 {
     font-size: 3vh;
     margin-top: 200px;
     margin-left: 10px;
   }
 }
-#firstMaintenanceSection h2 {
+#firstAutomationSection h2 {
   position: absolute;
   color: white;
   margin-top: 260px;
-  margin-left: -1380px;
+  margin-left: -1500px;
   font-size: 20px;
   font-weight: lighter;
 }
 @media (max-width: 777px) {
-  #firstMaintenanceSection h2 {
+  #firstAutomationSection h2 {
     font-size: 15px;
     margin-top: 290px;
     margin-left: -170px;
   }
 }
-#firstMaintenanceSection p {
+#firstAutomationSection .firstAutomationItem {
   position: absolute;
   color: white;
   margin-top: 350px;
-  margin-left: -740px;
+  margin-left: -795px;
   font-size: 25px;
   font-weight: lighter;
 }
 @media (max-width: 777px) {
-  #firstMaintenanceSection p {
+  #firstAutomationSection .firstAutomationItem {
     font-size: 2vh;
     margin-top: 350px;
     margin-left: 10px;
   }
 }
-#firstMaintenanceSection .btn-warning {
+#firstAutomationSection .secondAutomationItem {
+  position: absolute;
+  color: white;
+  margin-top: 400px;
+  margin-left: -1625px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+@media (max-width: 777px) {
+  #firstAutomationSection .secondAutomationItem {
+    font-size: 2vh;
+    margin-top: 420px;
+    margin-left: -260px;
+  }
+}
+#firstAutomationSection .thirdAutomationItem {
+  position: absolute;
+  color: white;
+  margin-top: 450px;
+  margin-left: -1455px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+@media (max-width: 777px) {
+  #firstAutomationSection .thirdAutomationItem {
+    font-size: 2vh;
+    margin-top: 460px;
+    margin-left: -135px;
+  }
+}
+#firstAutomationSection .forthAutomationItem {
+  position: absolute;
+  color: white;
+  margin-top: 500px;
+  margin-left: -1630px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+@media (max-width: 777px) {
+  #firstAutomationSection .forthAutomationItem {
+    font-size: 2vh;
+    margin-top: 500px;
+    margin-left: -260px;
+  }
+}
+#firstAutomationSection .btn-warning {
   position: absolute;
   margin-top: 630px;
-  margin-left: -1490px;
+  margin-left: -1620px;
   background-color: white;
   border-radius: 0;
   border-style: hidden;
 }
-#firstMaintenanceSection .btn-warning:hover {
+#firstAutomationSection .btn-warning:hover {
   background-color: rgb(223, 205, 86);
 }
-#firstMaintenanceSection .btn-warning:hover a {
+#firstAutomationSection .btn-warning:hover a {
   color: rgb(0, 0, 0);
 }
-#firstMaintenanceSection .btn-warning a {
+#firstAutomationSection .btn-warning a {
   color: black;
   text-decoration: none;
   font-weight: lighter;
   font-size: 23px;
 }
 @media (max-width: 777px) {
-  #firstMaintenanceSection .btn-warning {
+  #firstAutomationSection .btn-warning {
     position: absolute;
-    margin-top: 750px;
+    margin-top: 600px;
     margin-left: -260px;
   }
-  #firstMaintenanceSection .btn-warning a {
+  #firstAutomationSection .btn-warning a {
     font-weight: 400;
     font-size: 16px;
   }
 }
-#firstMaintenanceSection #maintenanceLogo {
+#firstAutomationSection #automationLogo {
   display: flex;
   margin-right: -10px;
   margin-bottom: 0;
@@ -86,20 +131,21 @@
   height: 900px;
 }
 @media (max-width: 777px) {
-  #firstMaintenanceSection #maintenanceLogo {
+  #firstAutomationSection #automationLogo {
     margin-left: 200px;
   }
 }
-#firstMaintenanceSection #maintenanceLogo img {
+#firstAutomationSection #automationLogo img {
   position: absolute;
   display: flex;
-  margin-top: 150px;
-  margin-left: 600px;
+  margin-top: 200px;
+  margin-left: 650px;
+  width: 400px;
 }
 @media (max-width: 777px) {
-  #firstMaintenanceSection #maintenanceLogo img {
+  #firstAutomationSection #automationLogo img {
     margin-top: 700px;
-    margin-left: -10px;
+    margin-left: 10px;
     width: 150px;
   }
 }
@@ -113,20 +159,6 @@
   #whiteContainer {
     height: 100px;
   }
-}
-
-#lastMaintenanceSection {
-  background-color: rgb(47, 47, 47);
-}
-#lastMaintenanceSection .maintenanceImages {
-  display: flex;
-  flex-direction: row;
-  border-radius: 10px;
-}
-#lastMaintenanceSection .maintenanceImages .img-fluid {
-  padding: 50px;
-  max-width: 20%;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=automations.css.map */

@@ -1,12 +1,7 @@
-.contactForm {
-  margin: 150px;
-}
-
-iframe {
-  height: 300;
-  width: 100%;
-  border: none;
-  border-radius: 15px;
+#contactSection iframe {
+  margin: 100px;
+  height: 800px;
+  width: 1000px;
 }
 
 /*# sourceMappingURL=contact-us.css.map */

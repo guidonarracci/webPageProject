@@ -9,24 +9,33 @@ header {
 		}
 		img{
 			width: 300px;
-		}
-		.dropdown-menu{
-			a{
-				color: black;
+			@media (max-width: 777px){
+				width: 250px;
 			}
 		}
 		a{
 			color: white;
+			@media (max-width: 777px){
+				font-size: 15px;
+				padding: 0;
+			}
 		}
 		background-color: rgb(22, 22, 22);
 		.collapse{
 			flex-grow: 0;
 			.btn-outline-success{
+				@media (max-width: 777px){
+					margin-left: 15px;
+					margin-top: 20px;
+				}
 				a{
 					color: white;
 					font-size: 24px;
 					font-family: $font-family_1;
 					text-decoration: none;
+					@media (max-width: 777px){
+						font-size: 20px;
+					}
 				}
 			}
 		}

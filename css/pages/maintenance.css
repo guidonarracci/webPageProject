@@ -69,7 +69,7 @@
 @media (max-width: 777px) {
   #firstMaintenanceSection .btn-warning {
     position: absolute;
-    margin-top: 750px;
+    margin-top: 650px;
     margin-left: -260px;
   }
   #firstMaintenanceSection .btn-warning a {
