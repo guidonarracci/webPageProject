@@ -4,6 +4,7 @@ main {
 }
 
 .mainText p {
+  text-align: center;
   margin-top: -50px;
   font-weight: 400;
   color: rgb(255, 255, 255);

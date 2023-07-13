@@ -277,11 +277,14 @@
 			color: rgb(73, 171, 224);
 		}
 		p{
+			display: flex;
+			justify-content: center;
 			margin-right: 100px;
 			text-align: center;
 			font-size: 18px;
 			color: white;
 			@media (max-width: 777px){
+				margin-top: 100px;
 				br{
 					display: none;
 				}

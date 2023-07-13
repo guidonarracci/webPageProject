@@ -107,6 +107,7 @@ main {
 }
 
 .mainText p {
+  text-align: center;
   margin-top: -50px;
   font-weight: 400;
   color: rgb(255, 255, 255);
@@ -682,12 +683,17 @@ main {
   color: rgb(73, 171, 224);
 }
 #ourProviders1 .providersText p {
+  display: flex;
+  justify-content: center;
   margin-right: 100px;
   text-align: center;
   font-size: 18px;
   color: white;
 }
 @media (max-width: 777px) {
+  #ourProviders1 .providersText p {
+    margin-top: 100px;
+  }
   #ourProviders1 .providersText p br {
     display: none;
   }
@@ -912,11 +918,135 @@ img.btn-whatsapp:hover {
     width: 80%;
   }
 }
-.maintenanceImage {
+#firstMaintenanceSection {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 10px;
+}
+#firstMaintenanceSection h1 {
+  position: absolute;
+  color: white;
+  font-weight: lighter;
+  font-size: 4vh;
+  margin-top: 200px;
+  margin-left: -1020px;
+}
+@media (max-width: 777px) {
+  #firstMaintenanceSection h1 {
+    font-size: 3vh;
+    margin-top: 200px;
+    margin-left: 10px;
+  }
+}
+#firstMaintenanceSection h2 {
+  position: absolute;
+  color: white;
+  margin-top: 260px;
+  margin-left: -1380px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+@media (max-width: 777px) {
+  #firstMaintenanceSection h2 {
+    font-size: 15px;
+    margin-top: 290px;
+    margin-left: -170px;
+  }
+}
+#firstMaintenanceSection p {
+  position: absolute;
+  color: white;
+  margin-top: 350px;
+  margin-left: -740px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+@media (max-width: 777px) {
+  #firstMaintenanceSection p {
+    font-size: 2vh;
+    margin-top: 350px;
+    margin-left: 10px;
+  }
+}
+#firstMaintenanceSection .btn-warning {
+  position: absolute;
+  margin-top: 630px;
+  margin-left: -1490px;
+  background-color: white;
+  border-radius: 0;
+  border-style: hidden;
+}
+#firstMaintenanceSection .btn-warning:hover {
+  background-color: rgb(223, 205, 86);
+}
+#firstMaintenanceSection .btn-warning:hover a {
+  color: rgb(0, 0, 0);
+}
+#firstMaintenanceSection .btn-warning a {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 23px;
+}
+@media (max-width: 777px) {
+  #firstMaintenanceSection .btn-warning {
+    position: absolute;
+    margin-top: 750px;
+    margin-left: -260px;
+  }
+  #firstMaintenanceSection .btn-warning a {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+#firstMaintenanceSection #maintenanceLogo {
+  display: flex;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-image: linear-gradient(to right, rgba(47, 69, 146, 0.827), rgba(48, 34, 127, 0.827), rgb(12, 35, 73));
+  height: 900px;
+}
+@media (max-width: 777px) {
+  #firstMaintenanceSection #maintenanceLogo {
+    margin-left: 200px;
+  }
+}
+#firstMaintenanceSection #maintenanceLogo img {
+  position: absolute;
+  display: flex;
+  margin-top: 150px;
+  margin-left: 600px;
+}
+@media (max-width: 777px) {
+  #firstMaintenanceSection #maintenanceLogo img {
+    margin-top: 700px;
+    margin-left: -10px;
+    width: 150px;
+  }
+}
+
+#whiteContainer {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+@media (max-width: 777px) {
+  #whiteContainer {
+    height: 100px;
+  }
+}
+
+#lastMaintenanceSection {
+  background-color: rgb(47, 47, 47);
+}
+#lastMaintenanceSection .maintenanceImages {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+#lastMaintenanceSection .maintenanceImages .img-fluid {
+  padding: 50px;
+  max-width: 20%;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=app.css.map */

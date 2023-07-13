@@ -318,12 +318,17 @@
   color: rgb(73, 171, 224);
 }
 #ourProviders1 .providersText p {
+  display: flex;
+  justify-content: center;
   margin-right: 100px;
   text-align: center;
   font-size: 18px;
   color: white;
 }
 @media (max-width: 777px) {
+  #ourProviders1 .providersText p {
+    margin-top: 100px;
+  }
   #ourProviders1 .providersText p br {
     display: none;
   }
