@@ -3,6 +3,7 @@ main {
 	width: 100%;
 }
 .mainText{
+	margin-top: -50px;
 	p{
 		text-align: center;
 		margin-top: -50px;
@@ -17,6 +18,7 @@ main {
 	justify-content: space-between;
 	background-image: linear-gradient(to top, rgb(187, 157, 135), rgb(125, 95, 73), rgb(91, 57, 33));
 	height: 755px;
+	margin-top: 85px;
 	color: whitesmoke;
 	.container-fluid{
 		img{
