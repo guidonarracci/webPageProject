@@ -665,13 +665,14 @@ main {
   }
 }
 #trenchersSection .row {
+  display: flex;
   align-items: center;
 }
-#trenchersSection h2 {
+#trenchersSection .row h2 {
   text-align: center;
   color: rgb(73, 171, 224);
 }
-#trenchersSection p {
+#trenchersSection .row p {
   text-align: center;
   color: white;
   font-size: 2vh;
@@ -680,70 +681,40 @@ main {
 
 #ourProviders1 {
   background-color: rgb(28, 28, 28);
-  display: flex;
-  flex-direction: row;
-  flex-grow: 0;
   margin-block: 150px;
-  overflow: hidden;
-  max-height: 1000px;
+}
+#ourProviders1 .row {
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 777px) {
-  #ourProviders1 {
-    display: flex;
-    flex-direction: column;
+  #ourProviders1 .row {
+    margin-top: 50px;
   }
 }
-#ourProviders1 .providersText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-}
-#ourProviders1 .providersText h2 {
-  margin-right: 100px;
+#ourProviders1 .row h2 {
   text-align: center;
   font-size: 3vh;
   color: rgb(73, 171, 224);
 }
-#ourProviders1 .providersText p {
-  display: flex;
-  justify-content: center;
-  margin-right: 100px;
+#ourProviders1 .row p {
   text-align: center;
   font-size: 18px;
   color: white;
-}
-@media (max-width: 777px) {
-  #ourProviders1 .providersText p {
-    margin-top: 100px;
-  }
-  #ourProviders1 .providersText p br {
-    display: none;
-  }
-}
-#ourProviders1 .row .container {
-  margin-top: 90px;
-  max-width: 1000px;
 }
 #ourProviders1 .row .container .paisaProviders {
   display: flex;
   align-items: center;
 }
+@media (max-width: 777px) {
+  #ourProviders1 .row .container .paisaProviders {
+    margin-top: -100px;
+  }
+}
 #ourProviders1 .row .container .paisaProviders .img-wrap {
   display: flex;
   flex-direction: column;
   max-width: 1500px;
-}
-@media (max-width: 777px) {
-  #ourProviders1 .row .container .paisaProviders {
-    overflow: hidden;
-  }
-  #ourProviders1 .row .container .paisaProviders .img-fluid .img-wrap {
-    position: absolute;
-  }
-  #ourProviders1 .row .container .paisaProviders .img-fluid .img3 {
-    position: relative;
-  }
 }
 
 #firstAutomationSection {
