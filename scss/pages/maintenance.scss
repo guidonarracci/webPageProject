@@ -1,48 +1,59 @@
 #firstMaintenanceSection{
+	position: absolute;
 	display: flex;
-	h1{
+	justify-content: space-between;
+	align-items: center;
+	margin-block: 150px;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+	overflow: visible;
+	.maintenanceText{
 		position: absolute;
-		color: white;
-		font-weight: lighter;
-		font-size: 4vh;
-		margin-top: 200px;
-		margin-left: -1020px;
-		@media (max-width: 777px){
-			font-size: 3vh;
-			margin-top: 200px;
-			margin-left: 10px;
+		h1{
+			justify-content: start;
+			margin-left: 100px;
+			font-weight: lighter;
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 4vh;
+			@media (max-width: 777px){
+				margin-left: 0;
+				font-size: 3vh;
+			}
 		}
-	}
-	h2{
-		position: absolute;
-		color: white;
-		margin-top: 260px;
-		margin-left: -1380px;
-		font-size: 20px;
-		font-weight: lighter;
-		@media (max-width: 777px){
-			font-size: 15px;
-			margin-top: 290px;
-			margin-left: -170px;
-		}
-	}
-	p{
-		position: absolute;
-		color: white;
-		margin-top: 350px;
-		margin-left: -740px;
-		font-size: 25px;
-		font-weight: lighter;
-		@media (max-width: 777px){
+		h2{
+			font-weight: lighter;
+			margin-left: 100px;
+			padding: 10px;
 			font-size: 2vh;
-			margin-top: 350px;
-			margin-left: 10px;
+			@media (max-width: 777px){
+				font-size: 12px;
+				margin-left: 0;
+			}
+		}
+		.box{
+			width: 50%;
+			height: 20%;
+			@media (max-width: 777px){
+				width: 100%;
+			}
+			p{
+				font-size: 3vh;
+				margin-left: 100px;
+				font-weight: lighter;
+				padding: 10px;
+				color: white;
+				@media (max-width: 777px){
+					font-size: 2vh;
+					margin-left: 0;
+				}
+			}
 		}
 	}
 	.btn-warning{
-		position: absolute;
-		margin-top: 630px;
-		margin-left: -1490px;
+		margin-top: 600px;
+		margin-left: 6%;
 		background-color: white;
 		border-radius: 0;
 		border-style: hidden;
@@ -59,36 +70,28 @@
 			font-size: 23px;
 		}
 		@media (max-width: 777px){
-			position: absolute;
-			margin-top: 650px;
-			margin-left: -260px;
 			a{
 				font-weight: 400;
 				font-size: 16px;
 			}
 		}
 	}
-	#maintenanceLogo{
+}
+#maintenanceLogo{
+	display: flex;
+	align-items: center;
+	background-image: linear-gradient(to right, rgba(47, 69, 146, 0.827), rgba(48, 34, 127, 0.827), rgb(12, 35, 73));
+	margin-right: 0;
+	margin-top: 99px;
+	max-width: 60%;
+	height: 800px;
+	@media (max-width: 777px){
 		display: flex;
-		margin-right: -10px;
-		margin-bottom: 0;
-		margin-top: 0;
-		background-image: linear-gradient(to right, rgba(47, 69, 146, 0.827), rgba(48, 34, 127, 0.827), rgb(12, 35, 73));
-		height:	900px;
-		@media (max-width: 777px){
-			margin-left: 200px;
-		}
-		img{
-			position: absolute;
-			display: flex;
-			margin-top: 150px;
-			margin-left: 600px;
-			@media (max-width: 777px){
-				margin-top: 700px;
-				margin-left: -10px;
-				width: 150px;
-			}
-		}
+		align-items: flex-end;
+		margin-bottom: 20px;
+	}
+	.img-fluid{
+		max-width: 80%;
 	}
 }
 #whiteContainer{
@@ -97,18 +100,5 @@
 	background-color: white;
 	@media (max-width: 777px){
 		height: 100px;
-	}
-}
-#lastMaintenanceSection{
-	background-color: rgb(47, 47, 47);
-	.maintenanceImages{
-		display: flex;
-		flex-direction: row;
-		border-radius: 10px;
-		.img-fluid{
-			padding: 50px;
-			max-width: 20%;
-			justify-content: space-between;
-		}
 	}
 }
