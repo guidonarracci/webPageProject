@@ -119,7 +119,7 @@
 	}
 	.row{
 		p{
-			font-size: 2vh;
+			font-size: 18px;
 			color: white;
 		}
 	}
@@ -174,7 +174,7 @@
 			display: flex;
 			justify-content: space-evenly;
 			text-align: center;
-			font-size: 2vh;
+			font-size: 18px;
 			color: white;
 			@media (max-width: 777px){
 				margin-left: 0;
@@ -225,7 +225,7 @@
 			display: flex;
 			justify-content: space-evenly;
 			text-align: center;
-			font-size: 2vh;
+			font-size: 18px;
 			color: white;
 			@media (max-width: 777px){
 				margin-left: 0;
@@ -243,13 +243,14 @@
 		display: flex;
 		align-items: center;
 		h2{
+			font-size: 3vh;
 			text-align: center;
 			color: rgb(73, 171, 224);
 		}
 		p{
 			text-align: center;
 			color: white;
-			font-size: 2vh;
+			font-size: 18px;
 			font-weight: 400;
 		}
 	}

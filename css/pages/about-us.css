@@ -130,7 +130,7 @@
   }
 }
 #getToKnowUs1 .row p {
-  font-size: 2vh;
+  font-size: 18px;
   color: white;
 }
 #getToKnowUs1 .img-fluid {
@@ -196,7 +196,7 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  font-size: 2vh;
+  font-size: 18px;
   color: white;
 }
 @media (max-width: 777px) {
@@ -258,7 +258,7 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  font-size: 2vh;
+  font-size: 18px;
   color: white;
 }
 @media (max-width: 777px) {
@@ -281,13 +281,14 @@
   align-items: center;
 }
 #trenchersSection .row h2 {
+  font-size: 3vh;
   text-align: center;
   color: rgb(73, 171, 224);
 }
 #trenchersSection .row p {
   text-align: center;
   color: white;
-  font-size: 2vh;
+  font-size: 18px;
   font-weight: 400;
 }
 

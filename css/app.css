@@ -23,6 +23,11 @@
 .pie-pagina .group-1 .box figure img {
   width: 250px;
 }
+@media (max-width: 777px) {
+  .pie-pagina .group-1 .box figure img {
+    width: 170px;
+  }
+}
 .pie-pagina .group-1 .box p {
   color: rgb(253, 253, 253);
   margin-bottom: 10px;
@@ -518,7 +523,7 @@ main {
   }
 }
 #getToKnowUs1 .row p {
-  font-size: 2vh;
+  font-size: 18px;
   color: white;
 }
 #getToKnowUs1 .img-fluid {
@@ -584,7 +589,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  font-size: 2vh;
+  font-size: 18px;
   color: white;
 }
 @media (max-width: 777px) {
@@ -646,7 +651,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  font-size: 2vh;
+  font-size: 18px;
   color: white;
 }
 @media (max-width: 777px) {
@@ -669,13 +674,14 @@ main {
   align-items: center;
 }
 #trenchersSection .row h2 {
+  font-size: 3vh;
   text-align: center;
   color: rgb(73, 171, 224);
 }
 #trenchersSection .row p {
   text-align: center;
   color: white;
-  font-size: 2vh;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -823,10 +829,20 @@ main {
   }
 }
 
-#contactSection iframe {
-  margin: 100px;
+#contactSection1 {
+  background-image: linear-gradient(to top, rgb(235, 234, 234), rgb(178, 175, 175), rgb(134, 133, 133));
+  width: 100%;
+}
+#contactSection1 iframe {
+  margin-top: 10px;
+  margin-bottom: -10px;
   height: 800px;
   width: 1000px;
+}
+@media (max-width: 777px) {
+  #contactSection1 iframe {
+    margin-top: 40px;
+  }
 }
 
 * {
