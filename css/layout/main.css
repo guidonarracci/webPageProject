@@ -6,12 +6,15 @@ main {
 .mainText {
   margin-top: -50px;
 }
+.mainText h1 {
+  font-size: 4vh;
+}
 .mainText p {
   text-align: center;
   margin-top: -50px;
   font-weight: lighter;
   color: rgb(255, 255, 255);
-  font-size: 24px;
+  font-size: 3vh;
 }
 
 #knowUsSection {
