@@ -9,7 +9,7 @@ main {
 .mainText p {
   text-align: center;
   margin-top: -50px;
-  font-weight: 400;
+  font-weight: lighter;
   color: rgb(255, 255, 255);
   font-size: 24px;
 }
@@ -135,11 +135,15 @@ main {
   align-items: center;
   margin-top: -70px;
 }
+#irrigationSystemsinfo h2 {
+  font-size: 4vh;
+  font-weight: lighter;
+}
 #irrigationSystemsinfo p {
   align-content: center;
   color: white;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: lighter;
 }
 
 #irrigationSystemsinfo2 {
@@ -157,7 +161,8 @@ main {
   margin-block-end: 100px;
 }
 #irrigationSystemsinfo2 .box h2 {
-  font-size: 3vh;
+  font-size: 4vh;
+  font-weight: lighter;
 }
 @media (max-width: 1400px) {
   #irrigationSystemsinfo2 .box {
@@ -223,12 +228,12 @@ main {
 }
 .brands p {
   background-color: rgba(210, 210, 33, 0.724);
-  font-weight: 400;
+  font-weight: lighter;
   padding: 50px;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .slider {

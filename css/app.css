@@ -67,11 +67,9 @@
 }
 header {
   position: fixed;
-  z-index: 1000000000;
+  z-index: 1000;
   width: 100%;
   grid-area: header;
-}
-header .navbar {
   background-color: rgb(22, 22, 22);
 }
 header .navbar .nav-link.active {
@@ -87,6 +85,8 @@ header .navbar img {
 }
 header .navbar a {
   color: white;
+  font-weight: lighter;
+  font-size: 2vh;
 }
 @media (max-width: 777px) {
   header .navbar a {
@@ -106,7 +106,6 @@ header .navbar .collapse {
 header .navbar .collapse .btn-outline-success a {
   color: white;
   font-size: 24px;
-  font-family: "Mulish", sans-serif;
   text-decoration: none;
 }
 @media (max-width: 777px) {
@@ -118,7 +117,6 @@ header ul li {
   padding: 20px;
   font-size: 17px;
   font-weight: 400;
-  font-family: "Mulish", sans-serif;
 }
 header ul li .nav-link:hover {
   transition: 0.5s;
@@ -136,7 +134,7 @@ main {
 .mainText p {
   text-align: center;
   margin-top: -50px;
-  font-weight: 400;
+  font-weight: lighter;
   color: rgb(255, 255, 255);
   font-size: 24px;
 }
@@ -262,11 +260,15 @@ main {
   align-items: center;
   margin-top: -70px;
 }
+#irrigationSystemsinfo h2 {
+  font-size: 4vh;
+  font-weight: lighter;
+}
 #irrigationSystemsinfo p {
   align-content: center;
   color: white;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: lighter;
 }
 
 #irrigationSystemsinfo2 {
@@ -284,7 +286,8 @@ main {
   margin-block-end: 100px;
 }
 #irrigationSystemsinfo2 .box h2 {
-  font-size: 3vh;
+  font-size: 4vh;
+  font-weight: lighter;
 }
 @media (max-width: 1400px) {
   #irrigationSystemsinfo2 .box {
@@ -350,12 +353,12 @@ main {
 }
 .brands p {
   background-color: rgba(210, 210, 33, 0.724);
-  font-weight: 400;
+  font-weight: lighter;
   padding: 50px;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .slider {
@@ -829,20 +832,15 @@ main {
   }
 }
 
-#contactSection1 {
+#contactForm {
   background-image: linear-gradient(to top, rgb(235, 234, 234), rgb(178, 175, 175), rgb(134, 133, 133));
-  width: 100%;
+  height: 800px;
+  max-width: 100%;
 }
-#contactSection1 iframe {
-  margin-top: 10px;
-  margin-bottom: -10px;
+#contactForm iframe {
+  margin-top: 100px;
   height: 800px;
   width: 1000px;
-}
-@media (max-width: 777px) {
-  #contactSection1 iframe {
-    margin-top: 40px;
-  }
 }
 
 * {
@@ -931,9 +929,9 @@ img.btn-whatsapp {
 }
 img.btn-whatsapp:hover {
   border-radius: 100px !important;
-  -webkit-box-shadow: 0px 0px 15px 0px rgb(183, 98, 0);
-  -moz-box-shadow: 0px 0px 15px 0px rgb(156, 84, 1);
-  box-shadow: 0px 0px 15px 0px rgb(137, 74, 1);
+  -webkit-box-shadow: 0px 0px 15px 0px rgb(26, 223, 4);
+  -moz-box-shadow: 0px 0px 15px 0px rgb(3, 204, 7);
+  box-shadow: 0px 0px 15px 0px rgb(3, 198, 32);
   transition-duration: 1s;
 }
 
@@ -1079,7 +1077,7 @@ img.btn-whatsapp:hover {
   }
 }
 #firstMaintenanceSection .maintenanceText .box p {
-  font-size: 3vh;
+  font-size: 25px;
   margin-left: 100px;
   font-weight: lighter;
   padding: 10px;

@@ -1,17 +1,59 @@
-/* Error: Undefined variable.
- *    ,
- * 34 |                     font-family: $font-family_1;
- *    |                                  ^^^^^^^^^^^^^^
- *    '
- *   scss\layout\header.scss 34:19  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 34 \2502                      font-family: $font-family_1;\d\a    \2502                                   ^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\header.scss 34:19  root stylesheet";
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  grid-area: header;
+  background-color: rgb(22, 22, 22);
 }
+header .navbar .nav-link.active {
+  color: rgb(94, 151, 194);
+}
+header .navbar img {
+  width: 300px;
+}
+@media (max-width: 777px) {
+  header .navbar img {
+    width: 250px;
+  }
+}
+header .navbar a {
+  color: white;
+  font-weight: lighter;
+  font-size: 2vh;
+}
+@media (max-width: 777px) {
+  header .navbar a {
+    font-size: 15px;
+    padding: 0;
+  }
+}
+header .navbar .collapse {
+  flex-grow: 0;
+}
+@media (max-width: 777px) {
+  header .navbar .collapse .btn-outline-success {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+}
+header .navbar .collapse .btn-outline-success a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+@media (max-width: 777px) {
+  header .navbar .collapse .btn-outline-success a {
+    font-size: 20px;
+  }
+}
+header ul li {
+  padding: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+header ul li .nav-link:hover {
+  transition: 0.5s;
+  color: rgb(94, 151, 194);
+}
+
+/*# sourceMappingURL=header.css.map */
