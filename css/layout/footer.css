@@ -1,17 +1,69 @@
-/* Error: Undefined variable.
- *   ,
- * 5 |     background-color: $background-color_1;
- *   |                       ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\footer.scss 5:20  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      background-color: $background-color_1;\d\a   \2502                        ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\footer.scss 5:20  root stylesheet";
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  grid-area: footer;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
+.pie-pagina .group-1 {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .group-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .group-1 .box figure img {
+  width: 250px;
+}
+@media (max-width: 777px) {
+  .pie-pagina .group-1 .box figure img {
+    width: 170px;
+  }
+}
+.pie-pagina .group-1 .box p {
+  color: rgb(253, 253, 253);
+  margin-bottom: 10px;
+}
+.pie-pagina .group-1 .social-media a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .group-1 .social-media a:hover {
+  color: rgb(215, 154, 0);
+}
+.pie-pagina .group-2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+}
+.pie-pagina .group-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .group-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
